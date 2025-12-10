@@ -21,16 +21,21 @@ public class LoginApp {
         String predefinedUsername = "admin";
         String predefinedPassword = "1234";
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter username: ");
-        String username = sc.nextLine();
-        System.out.print("Enter password: ");
-        String password = sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
 
-        if (username.equals(predefinedUsername) && password.equals(predefinedPassword))
+        System.out.print("Enter username: ");
+        String username = scanner.nextLine();
+
+        System.out.print("Enter password: ");
+        String password = scanner.nextLine();
+
+        if (username.equals(predefinedUsername) && password.equals(predefinedPassword)) {
             System.out.println("Login Successful");
-        else
+        } else {
             System.out.println("Access Denied");
+        }
+
+        scanner.close();
     }
 }
 
