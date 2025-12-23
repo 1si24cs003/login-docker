@@ -1,3 +1,10 @@
+docker build -t loginapp .
+
+docker run -it loginapp
+
+admin
+1234
+-----------------------------------------------------
 Aim:
 
 To containerize a Java application LoginApp.java that accepts username and password, and prints
